@@ -1,5 +1,5 @@
 
-# Hvad skal denne mappe bruges til?
+# Hvad skal dette filsystem bruges til?
 Den bliver primært brugt til alle filer til vores projekt, filtypper der IKKE kan være i vores github er:
 - Google filer
 - Trello
