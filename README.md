@@ -10,7 +10,7 @@ Der skal nok findes et alternativ til disse, således alle filer kan findes ET s
 
 Google drev bliver brugt til udelukkende google dokumenter :: [GOOGLE DREV MAPPE](https://drive.google.com/drive/folders/1oUl3gMzx8g5aRh2pTacPJsKuCpsToWTh?usp=sharing) ::
 
-Trello / Kanban opsætning :: [TRELLO WORKSPACE]()
+Trello / Kanban opsætning :: [TRELLO WORKSPACE]() ::
 
 Andre filer bliver oploaded til GitHub siden der ikke er nogle begrensning af plads.
 
