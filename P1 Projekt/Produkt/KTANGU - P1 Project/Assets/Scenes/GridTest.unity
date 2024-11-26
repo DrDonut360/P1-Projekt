@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 99325495}
   - component: {fileID: 99325494}
   - component: {fileID: 99325493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Impassable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,14 +1081,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5856940722254949545, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 1296435913}
-    - target: {fileID: 5856940722254949545, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
-      propertyPath: coll
-      value: 
-      objectReference: {fileID: 1296435914}
     - target: {fileID: 7552764210502130955, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5
@@ -1136,10 +1128,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8715455794840791119, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1296435913}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
 --- !u!1 &686424774
 GameObject:
@@ -2271,43 +2260,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1296435912 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8715455794840791119, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
-  m_PrefabInstance: {fileID: 524749810}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1296435913
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296435912}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &1296435914 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
-  m_PrefabInstance: {fileID: 524749810}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1784183311
 GameObject:
   m_ObjectHideFlags: 0
