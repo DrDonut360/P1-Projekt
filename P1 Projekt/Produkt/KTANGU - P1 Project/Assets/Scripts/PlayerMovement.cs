@@ -36,10 +36,10 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
 
-            // checks if desired move is blocked
-            if (Physics2D.OverlapCircle(rb.position + inputDir, 0.1f))
+            // checks if desired move is blocked by Hazzard, and damages player if so
+            if (Physics2D.OverlapCircle(rb.position + inputDir, 0.1f, LayerMask.GetMask("Hazard")))
             {
-                Debug.Log("cant move to here");
+                GetComponent<Health>().TakeDamage(1);
                 return;
             }
 
