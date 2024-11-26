@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
             rb.position += moveDir * 0.1f;
             yield return new WaitForSeconds(.01f);
         }
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(.05f);
         canMove = true;
     }
 }
