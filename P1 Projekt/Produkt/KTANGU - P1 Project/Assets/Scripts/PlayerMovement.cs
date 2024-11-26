@@ -10,6 +10,7 @@ using UnityEngine.UIElements;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] TileManager tileManager;
     // Start is called before the first frame update
 
     private bool canMove = true;
@@ -36,10 +37,26 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
 
-            // checks if desired move is blocked by Hazzard, and damages player if so
-            if (Physics2D.OverlapCircle(rb.position + inputDir, 0.1f, LayerMask.GetMask("Hazard")))
+            UnityEngine.Vector2 targetPosition = rb.position + inputDir;
+
+            // Calculate the tile position  (tak chatgpt)
+            Vector3Int tilePosition = new Vector3Int(
+                Mathf.FloorToInt(targetPosition.x),
+                Mathf.FloorToInt(targetPosition.y),
+                0
+            );
+
+            if (Physics2D.OverlapCircle(targetPosition, 0.1f, LayerMask.GetMask("Hazard")))
             {
                 GetComponent<Health>().TakeDamage(1);
+
+                tileManager.MakeHazardSafe(tilePosition);
+
+                return;
+            }
+
+            if (Physics2D.OverlapCircle(targetPosition, 0.1f, LayerMask.GetMask("Safe")))
+            {
                 return;
             }
 
