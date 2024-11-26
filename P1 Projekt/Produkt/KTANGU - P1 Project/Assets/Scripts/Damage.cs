@@ -23,7 +23,7 @@ public class Damage : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            if(playerHealth == null) //Lets the game object player find the health script if/when it spawns in
+            if(playerHealth == null) //Lets the game object find the health script if/when it spawns in
             {
                playerHealth = collision.gameObject.GetComponent<Health>();
 

@@ -1,25 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
-    Rigidbody2D rb;
-    Vector2 playerInput;
-    float speed = 10f;
+    [SerializeField] private float speed = 20f; 
+    private Rigidbody2D rb;
+    private UnityEngine.Vector2 direction;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-   private void Update()
+   void Update()
    {
-        playerInput = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
+        direction = new UnityEngine.Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
    }
 
    private void FixedUpdate()
    {
-    rb.AddForce(playerInput);
+        rb.velocity = direction * speed;
    }
 }
