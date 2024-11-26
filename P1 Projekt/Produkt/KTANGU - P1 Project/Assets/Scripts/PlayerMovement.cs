@@ -10,7 +10,6 @@ using UnityEngine.UIElements;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
-    [SerializeField] BoxCollider2D coll;
     // Start is called before the first frame update
 
     private bool canMove = true;
@@ -23,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     {
         // gets move input
         UnityEngine.Vector2 inputDir = new UnityEngine.Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        
+        // moves player if conditions are met
         if (Mathf.Abs(inputDir.x) == 1 || Mathf.Abs(inputDir.y) == 1)
         {
             // prevents diagonal movement
@@ -43,16 +44,11 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
 
-            //Move(inputDir);
             StartCoroutine(MoveGradually(inputDir));
         }
     }
 
-    private void Move(UnityEngine.Vector2 moveDir)
-    {
-            rb.position += moveDir;
-    }
-
+    // moves player to desired tile over time
     IEnumerator MoveGradually(UnityEngine.Vector2 moveDir) 
     {
         canMove = false;
@@ -63,11 +59,7 @@ public class PlayerMovement : MonoBehaviour
             rb.position += moveDir * 0.1f;
             yield return new WaitForSeconds(.01f);
         }
+        
         canMove = true;
     }
-
-    /*IEnumerator MoveGradually(UnityEngine.Vector2 targetPos)
-    {
-        trans.position = new UnityEngine.Vector2((targetPos.x - trans.position.x) *0.1f, (targetPos.y - trans.position.y) *0.1f);
-    }*/
 }
