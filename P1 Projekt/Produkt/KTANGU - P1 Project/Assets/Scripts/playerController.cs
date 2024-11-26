@@ -16,7 +16,7 @@ public class playerController : MonoBehaviour
 
    void Update()
    {
-        direction = new UnityEngine.Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+        direction = new UnityEngine.Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
    }
 
    private void FixedUpdate()
