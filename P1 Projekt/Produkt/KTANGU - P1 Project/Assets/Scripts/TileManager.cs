@@ -17,11 +17,7 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Vector3Int tilePos = new Vector3Int(0,0,0); 
-            MakeHazardSafe(tilePos);
-        }
+        
     }
 
     public void MakeHazardSafe(Vector3Int tilePos)
