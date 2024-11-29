@@ -21,17 +21,18 @@ public class Collectable : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (inventory != null)
-            {
-                inventory.AddCollectable(gameObject.name);
-                
-                // Destroy this collectable object after adding to inventory
-                Destroy(gameObject);
-            }
-            else
-            {
-                Debug.LogError("Inventory is not assigned!");
-            }
+            AddToInventory();
+            Destroy(gameObject);
         }
+    }
+
+    public void AddToInventory()
+    {
+        if (inventory == null)
+        {
+            Debug.LogError("Inventory is not assigned!");
+            return;
+        }
+        inventory.AddCollectable(gameObject.name);
     }
 }
