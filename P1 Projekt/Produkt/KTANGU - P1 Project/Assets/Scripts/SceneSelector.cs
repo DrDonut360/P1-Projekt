@@ -31,10 +31,25 @@ public class SceneSelector : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player") && sceneName == "Start-End")
         {
-            Debug.Log("Loading scene");
-            SceneManager.LoadScene("HealthTest");
-            
-        }//else if ...
+            Debug.Log("Loading 1st level");
+            SceneManager.LoadScene("LevelOne");
+
+        }
+        else if (other.gameObject.CompareTag("Player") && sceneName == "LevelOne")
+        {
+            Debug.Log("Loading 2nd level");
+            SceneManager.LoadScene("LevelTwo");
+        }
+        else if (other.gameObject.CompareTag("Player") && sceneName == "LevelTwo")
+        {
+            Debug.Log("Loading 3rd level");
+            SceneManager.LoadScene("LeveltThree");
+        }
+        else if (other.gameObject.CompareTag("Player") && sceneName == "LevelThree")
+        {
+            Debug.Log("Loading Main Menu");
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 
     
