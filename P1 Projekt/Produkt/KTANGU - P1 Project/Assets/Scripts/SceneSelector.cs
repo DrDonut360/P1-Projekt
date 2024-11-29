@@ -18,8 +18,8 @@ public class SceneSelector : MonoBehaviour
 
     //}
 
-    //hav et dictionary med scener, led efter scener. tjeck hvilken scene vi er på.
-    //Tjekker om playeren går ind i vores mål, hvis den gør dette vll den gå til en ny scene.
+    //hav et dictionary med scener, led efter scener. tjeck hvilken scene vi er pï¿½.
+    //Tjekker om playeren gï¿½r ind i vores mï¿½l, hvis den gï¿½r dette vll den gï¿½ til en ny scene.
     void OnCollisionEnter2D(Collision2D other)
     {
         //Make a method for finding a scene name... and stuff
@@ -43,7 +43,7 @@ public class SceneSelector : MonoBehaviour
         else if (other.gameObject.CompareTag("Player") && sceneName == "LevelTwo")
         {
             Debug.Log("Loading 3rd level");
-            SceneManager.LoadScene("LeveltThree");
+            SceneManager.LoadScene("LevelThree");
         }
         else if (other.gameObject.CompareTag("Player") && sceneName == "LevelThree")
         {
