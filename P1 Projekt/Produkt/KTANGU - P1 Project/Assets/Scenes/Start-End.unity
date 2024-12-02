@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -271,6 +268,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32d1c34c1ccab41498fd5a27d4758a37, type: 3}
+--- !u!95 &1124310152 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7219794311018968381, guid: 2b8724e8bed998c48bea2623b0062d85, type: 3}
+  m_PrefabInstance: {fileID: 330792377333748201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1241646724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -485,6 +487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainGoal
       objectReference: {fileID: 0}
+    - target: {fileID: 6032125107767458814, guid: 2b8724e8bed998c48bea2623b0062d85, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1124310152}
     - target: {fileID: 8436499618036731174, guid: 2b8724e8bed998c48bea2623b0062d85, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5
