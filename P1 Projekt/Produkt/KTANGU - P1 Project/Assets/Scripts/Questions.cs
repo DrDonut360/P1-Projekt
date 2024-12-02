@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Questions : MonoBehaviour
 {
-    private string[] questions = 
+    private List<string> questions = new List<string>
     {
         "If you make a mistake on this team, it is often held against you.",
         "Members of this team are able to bring up problems and tough issues.",
@@ -27,8 +27,12 @@ public class Questions : MonoBehaviour
 
     public string GetRandomQuestion()
     {
-        int randomIndex = UnityEngine.Random.Range(0, questions.Length);
-        Debug.Log(questions[randomIndex]);
-        return questions[randomIndex];
+        int randomIndex = UnityEngine.Random.Range(0, questions.Count);
+        string question = questions[randomIndex];
+
+        questions.RemoveAt(randomIndex);
+
+        Debug.Log(question);
+        return question;
     }
 }
