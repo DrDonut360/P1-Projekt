@@ -127,6 +127,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6049276298399588053, guid: d99268316d7a0154c824dd09ba061337, type: 3}
   m_PrefabInstance: {fileID: 1305994662}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &74253696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7516535610275789680, guid: 32d1c34c1ccab41498fd5a27d4758a37, type: 3}
+  m_PrefabInstance: {fileID: 1320735796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &74253697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74253696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5de275dedf9a9d46869e48c39b5ad8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1871864652}
 --- !u!1 &315174492
 GameObject:
   m_ObjectHideFlags: 0
@@ -3482,6 +3500,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &459259944
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225403341355848528, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_Name
+      value: QuizManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
 --- !u!114 &596041386 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2656332966637626407, guid: d99268316d7a0154c824dd09ba061337, type: 3}
@@ -11885,7 +11960,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7516535610275789680, guid: 32d1c34c1ccab41498fd5a27d4758a37, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 74253697}
   m_SourcePrefab: {fileID: 100100000, guid: 32d1c34c1ccab41498fd5a27d4758a37, type: 3}
 --- !u!1 &1494444103
 GameObject:
@@ -12218,3 +12296,4 @@ SceneRoots:
   - {fileID: 1757212114}
   - {fileID: 455927479}
   - {fileID: 1494444107}
+  - {fileID: 459259944}
