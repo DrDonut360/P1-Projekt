@@ -3549,6 +3549,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9199683216332946694, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199683216332946694, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11824,7 +11832,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1992210447926397447, guid: 32d1c34c1ccab41498fd5a27d4758a37, type: 3}
       propertyPath: m_BodyType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6643111702015947169, guid: 32d1c34c1ccab41498fd5a27d4758a37, type: 3}
       propertyPath: inventory
