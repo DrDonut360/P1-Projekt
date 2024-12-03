@@ -8709,13 +8709,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2013939481451575528, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
-      propertyPath: m_SortingOrder
-      value: 99
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2252909879590933568, guid: 4378f901875380949b3d41e103479b53, type: 3}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.09198287
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.08898853
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.16047886
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 5856940722254949545, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
       propertyPath: tileManager
       value: 
       objectReference: {fileID: 596041386}
+    - target: {fileID: 7552764210502130955, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552764210502130955, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552764210502130955, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7552764210502130955, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5
@@ -8755,6 +8799,10 @@ PrefabInstance:
     - target: {fileID: 7552764210502130955, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552764210502130955, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715455794840791119, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
       propertyPath: m_Name

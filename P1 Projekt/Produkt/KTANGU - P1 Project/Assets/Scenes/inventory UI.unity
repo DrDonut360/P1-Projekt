@@ -28661,6 +28661,14 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2619351243109389511, guid: 32d1c34c1ccab41498fd5a27d4758a37, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619351243109389511, guid: 32d1c34c1ccab41498fd5a27d4758a37, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6643111702015947169, guid: 32d1c34c1ccab41498fd5a27d4758a37, type: 3}
       propertyPath: inventory
       value: 
