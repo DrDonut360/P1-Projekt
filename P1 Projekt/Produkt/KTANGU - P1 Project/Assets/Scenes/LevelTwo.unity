@@ -358,38 +358,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1373854783895319491, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2190274639738996533, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 2190274639738996533, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 2190274639738996533, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -65.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2591740766665630695, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 2591740766665630695, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 2591740766665630695, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2591740766665630695, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 99.93
-      objectReference: {fileID: 0}
     - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -433,14 +401,6 @@ PrefabInstance:
     - target: {fileID: 6225403341355848528, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
       propertyPath: m_Name
       value: QuizManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 9124559926977588865, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 4135945253527006541, guid: 3fa56f617a92c404db7769966a34aa9d, type: 3}
-    - target: {fileID: 9124559926977588865, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
-      propertyPath: m_Color.a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
