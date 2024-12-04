@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
 
     private bool canMove = true;
+    public UnityEngine.Vector2 inputDir;
     void Start()
     {
     }
