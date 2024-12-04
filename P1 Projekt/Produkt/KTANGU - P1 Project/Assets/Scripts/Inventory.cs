@@ -17,7 +17,7 @@ public class Inventory : MonoBehaviour
     private List<UnityEngine.UI.Image> starImages = new List<UnityEngine.UI.Image>();
 
     // Start is called before the first frame update
-    private List<string> collected = new List<string>();
+    private List<GameObject> collected = new List<GameObject>();
     void Start()
     {  
         DrawStarPanel();
@@ -31,6 +31,7 @@ public class Inventory : MonoBehaviour
             if (obj.GetComponent<IsStar>() != null)
             {
                 starCount++;
+                Debug.Log("starcount is " + starCount + "");
             }
         }
 
@@ -80,11 +81,11 @@ public class Inventory : MonoBehaviour
         starImage.color = Color.white;
     }
 
-    public void AddCollectable(string collectable)
+    public void AddCollectable(GameObject collectable)
     {
         collected.Add(collectable);
         Debug.Log("Collected items: " + string.Join(", ", collected));
-        if (collectable == "Star")
+        if (collectable.GetComponent<IsStar>() != null)
         {
             LightStar();
         }

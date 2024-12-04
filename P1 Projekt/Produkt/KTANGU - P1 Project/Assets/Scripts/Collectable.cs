@@ -33,6 +33,6 @@ public class Collectable : MonoBehaviour
             Debug.LogError("Inventory is not assigned!");
             return;
         }
-        inventory.AddCollectable(gameObject.name);
+        inventory.AddCollectable(gameObject);
     }
 }

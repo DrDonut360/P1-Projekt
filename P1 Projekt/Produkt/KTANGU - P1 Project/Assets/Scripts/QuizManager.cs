@@ -25,8 +25,6 @@ public class QuizManager : MonoBehaviour
             }
         }
     }
-
-    // Show the popup
     public void ShowQuiz()
     {
         WriteQuestion();
