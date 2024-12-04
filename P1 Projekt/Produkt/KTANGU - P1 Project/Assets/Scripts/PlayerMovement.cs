@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] TileManager tileManager;
     // Start is called before the first frame update
 
-    private bool canMove = true;
+    public bool canMove = true;
     public UnityEngine.Vector2 inputDir;
     void Start()
     {

@@ -16,7 +16,7 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (movement.inputDir != Vector2.zero)
+        if (movement.canMove != true)
         {
             animator.SetBool("IsMoving", true);
         }
