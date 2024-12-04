@@ -8,7 +8,7 @@ using UnityEngine.UIElements.Experimental;
 public class SceneSelector : MonoBehaviour
 {
     
-    public Animator transition;
+    /*public Animator transition;*/
     public float TransAnimTime = 1f;
 
     //hav et dictionary med scener, led efter scener. tjeck hvilken scene vi er p�.
@@ -24,7 +24,7 @@ public class SceneSelector : MonoBehaviour
         Debug.Log($"the name of the scene is : {sceneName}");
 
 
-        if (other.gameObject.CompareTag("Player") && sceneName == "Start-End")
+        /*if (other.gameObject.CompareTag("Player") && sceneName == "Start-End")
         {
             Debug.Log("Loading 1st level");
             SceneManager.LoadScene("LevelOne");
@@ -33,12 +33,12 @@ public class SceneSelector : MonoBehaviour
         else if (other.gameObject.CompareTag("Player"))
         {
             LoadNextLevel();
-        }
+        }*/
         
 
         
 
-        /*if (other.gameObject.CompareTag("Player") && sceneName == "Start-End")
+        if (other.gameObject.CompareTag("Player") && sceneName == "Start-End")
         {
             Debug.Log("Loading 1st level");
             SceneManager.LoadScene("LevelOne");
@@ -57,26 +57,26 @@ public class SceneSelector : MonoBehaviour
         else if (other.gameObject.CompareTag("Player") && sceneName == "LevelThree")
         {
             Debug.Log("Loading Main Menu");
-            SceneManager.LoadScene("MainMenu");
-        }*/
+            SceneManager.LoadScene("StartMenu");
+        }
     }
-    public void LoadNextLevel ()
+    /*public void LoadNextLevel ()
     {
         Debug.Log($"Loading {SceneManager.GetActiveScene().name}");
 
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
 
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+    }*/
 
-    IEnumerator LoadLevel (int LevelIndex)
+    /*IEnumerator LoadLevel (int LevelIndex)
     {
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(TransAnimTime);
 
         SceneManager.LoadScene(LevelIndex);
-    }
+    }*/
 
 
 
