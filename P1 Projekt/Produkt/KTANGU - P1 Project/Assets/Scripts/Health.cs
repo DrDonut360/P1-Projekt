@@ -5,18 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
+    public Animator animator;
     public int health;
     public int maxHealth = 3;
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void TakeDamage(int amount)
