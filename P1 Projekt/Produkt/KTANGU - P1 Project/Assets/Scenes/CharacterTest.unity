@@ -8749,6 +8749,14 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062943728613318487, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.21
       objectReference: {fileID: 0}
@@ -8831,7 +8839,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8715455794840791119, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2121046049}
   m_SourcePrefab: {fileID: 100100000, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
 --- !u!1001 &1305994662
 PrefabInstance:
@@ -38368,6 +38379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character Anim -Dash-Collect-Damage-Idle 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: a788680b46852894ab834c7fc84fed9a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a11bbbdc5f94f0c4e90f05f1e3760e6d, type: 2}
     - target: {fileID: 3626916397498700004, guid: a788680b46852894ab834c7fc84fed9a, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -38425,6 +38440,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: a788680b46852894ab834c7fc84fed9a, type: 3}
+--- !u!1 &2121046042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8715455794840791119, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+  m_PrefabInstance: {fileID: 1107121984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2121046049
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121046042}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a11bbbdc5f94f0c4e90f05f1e3760e6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2123825383
 PrefabInstance:
   m_ObjectHideFlags: 0
