@@ -28,7 +28,7 @@ public class Inventory : MonoBehaviour
         //counts amount of stars
         foreach (GameObject obj in FindObjectsOfType<GameObject>())
         {
-            if (obj.name == "Star")
+            if (obj.GetComponent<IsStar>() != null)
             {
                 starCount++;
             }
