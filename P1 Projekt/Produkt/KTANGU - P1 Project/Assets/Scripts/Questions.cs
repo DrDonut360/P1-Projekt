@@ -7,22 +7,18 @@ public class Questions : MonoBehaviour
 {
     private List<string> questions = new List<string>
     {
-        "If you make a mistake on this team, it is often held against you.",
-        "Members of this team are able to bring up problems and tough issues.",
-        "People on this team sometimes reject others for being different.",
-        "It is safe to take a risk on this team.",
-        "It is difficult to ask other members of this team for help.",
-        "No one on this team would deliberately act in a way that undermines my efforts.",
-        "Working with members of this team, my unique skills and talents are valued and utilized.",
-        "In our team we actively seek out each other for constructive discussions.",
-        "In our team we are encouraged to try new ways of doing things.",
-        "In our team we are comfortable with exploring unfamiliar or unknown ideas and perspectives.",
-        "Building on each other's ideas is an integral part of how we work in our team.",
-        "In our team we promote behaviors that are conducive towards a trustful environment.",
-        //"I feel confident I can perform well in my study.",
-        "I found teamwork beneficial for my learning.",
-        //"I am satisfied with the support provided by the university during my study.",
-        //"In general, I feel happy about my study."
+        "If I make mistakes in teams, it is often held against me.",
+        "I have always been able to bring up problems and tough issues in teamwork.",
+        "I've noticed that people in teams sometimes reject others for being different.",
+        "It is safe to take a risk on the teams I've worked with.",
+        "It is difficult to ask other team members for help.",
+        "No one, on teams I've worked with, would deliberately act in a way that undermined my efforts.",
+        "Working in teamwork, my unique skills and talents are often valued and utilized.",
+        "In my previous teams, we actively sought out each other for constructive discussions.",
+        "In my previous teams, we were encouraged to try new ways of doing things.",
+        "In my previous teams, we were comfortable with exploring unfamiliar or unknown ideas and perspectives.",
+        "Building on each other's ideas has been an integral part of how teams I've worked with operate.",
+        "In my previous teams, behaviors conducive to a trustful environment were actively promoted."
     };
 
     public string GetRandomQuestion()
