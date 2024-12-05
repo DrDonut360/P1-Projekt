@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
     [SerializeField] TileManager tileManager;
-    // Start is called before the first frame update
+    [SerializeField] QuizManager quizManager;
 
     public bool canMove = true;
     public UnityEngine.Vector2 inputDir;
@@ -19,6 +19,17 @@ public class PlayerMovement : MonoBehaviour
     public bool damageTaken = false;
     void Start()
     {
+        // auto asigns quizManager
+        if (quizManager == null)
+        {
+            foreach (GameObject obj in FindObjectsOfType<GameObject>())
+            {
+                if (obj.GetComponent<QuizManager>() != null)
+                {
+                    quizManager = obj.GetComponent<QuizManager>();
+                }
+            }
+        }
     }
 
     // Update is called once per frame
@@ -26,9 +37,10 @@ public class PlayerMovement : MonoBehaviour
     {
         // gets move input
         UnityEngine.Vector2 inputDir = new UnityEngine.Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        // moves player if conditions are met
+        // moves player if none of the conditions are met
         if (Mathf.Abs(inputDir.x) == 1 || Mathf.Abs(inputDir.y) == 1)
         {
+
             // prevents diagonal movement
             if (Mathf.Abs(inputDir.x) == Mathf.Abs(inputDir.y))
             {
@@ -36,6 +48,11 @@ public class PlayerMovement : MonoBehaviour
             }
 
             if (!canMove)
+            {
+                return;
+            }
+
+            if (quizManager.showingQuiz)
             {
                 return;
             }
