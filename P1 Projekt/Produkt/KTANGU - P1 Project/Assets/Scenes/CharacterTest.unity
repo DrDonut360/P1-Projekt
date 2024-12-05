@@ -8765,6 +8765,14 @@ PrefabInstance:
       value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 5856940722254949545, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: inputDir.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856940722254949545, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: inputDir.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856940722254949545, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
       propertyPath: tileManager
       value: 
       objectReference: {fileID: 596041386}
