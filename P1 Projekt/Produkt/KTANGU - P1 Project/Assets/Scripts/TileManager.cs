@@ -19,7 +19,6 @@ public class TileManager : MonoBehaviour
     {
         
     }
-
     public void MakeHazardSafe(Vector3Int tilePos)
     {
         TileBase hazardTile = hazardTilemap.GetTile(tilePos);
