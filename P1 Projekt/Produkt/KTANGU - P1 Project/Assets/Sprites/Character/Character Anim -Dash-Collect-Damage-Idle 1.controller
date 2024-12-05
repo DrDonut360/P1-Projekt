@@ -36,10 +36,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -2394153682818006141}
-    m_Position: {x: 302.98297, y: 19.280579, z: 0}
+    m_Position: {x: 230, y: -50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -551182794133999352}
-    m_Position: {x: 373.0882, y: 106.91217, z: 0}
+    m_Position: {x: 310, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2066475730536328973}
     m_Position: {x: 300, y: 380, z: 0}
@@ -145,6 +145,12 @@ AnimatorController:
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsMoving
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: DamageTaken
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
