@@ -24,5 +24,13 @@ public class PlayerAnimation : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
+        if (movement.damageTaken == true)
+        {
+            animator.SetBool("DamageTaken", true);
+        }
+        else
+        {
+            animator.SetBool("DamageTaken", false);
+        }
     }
 }

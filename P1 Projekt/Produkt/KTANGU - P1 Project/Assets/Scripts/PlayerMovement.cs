@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public bool canMove = true;
     public UnityEngine.Vector2 inputDir;
     public bool isMoving = false;
+    public bool damageTaken = false;
     void Start()
     {
     }
@@ -52,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 GetComponent<Health>().TakeDamage(1);
 
+                damageTaken = true;
+
                 tileManager.MakeHazardSafe(tilePosition);
 
                 return;
@@ -59,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (Physics2D.OverlapCircle(targetPosition, 0.1f, LayerMask.GetMask("Safe")))
             {
+                damageTaken = false;
                 return;
             }
 
