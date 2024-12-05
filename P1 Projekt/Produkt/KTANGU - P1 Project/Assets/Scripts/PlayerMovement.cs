@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool canMove = true;
     public UnityEngine.Vector2 inputDir;
+    public bool isMoving = false;
     void Start()
     {
     }
@@ -69,14 +70,18 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator MoveGradually(UnityEngine.Vector2 moveDir) 
     {
         canMove = false;
+        isMoving = true;
 
         UnityEngine.Vector2 targetPos = rb.position + moveDir;
         while (rb.position != targetPos)
         {
             rb.position += moveDir * 0.1f;
             yield return new WaitForSeconds(.01f);
+            
         }
         yield return new WaitForSeconds(.05f); // endlag
         canMove = true;
+        isMoving = false;
+        
     }
 }
