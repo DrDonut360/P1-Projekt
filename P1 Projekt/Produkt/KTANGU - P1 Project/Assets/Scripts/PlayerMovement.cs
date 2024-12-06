@@ -1,11 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
-using Unity.Collections;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
