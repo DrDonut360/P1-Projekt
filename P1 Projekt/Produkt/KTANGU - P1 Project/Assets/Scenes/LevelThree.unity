@@ -10326,6 +10326,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6049276298399588053, guid: d99268316d7a0154c824dd09ba061337, type: 3}
       insertIndex: -1
       addedObject: {fileID: 858542547}
+    - targetCorrespondingSourceObject: {fileID: 6049276298399588053, guid: d99268316d7a0154c824dd09ba061337, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 268485473}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d99268316d7a0154c824dd09ba061337, type: 3}
 --- !u!4 &253291767 stripped
@@ -10405,12 +10408,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268485470}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 253291767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &301855208
 PrefabInstance:
@@ -17177,6 +17180,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5856940722254949545, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 996294541}
+    - target: {fileID: 5856940722254949545, guid: c3ba3ba030f47544cb50e15f520d211b, type: 3}
       propertyPath: tileManager
       value: 
       objectReference: {fileID: 253291768}
@@ -17309,6 +17316,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b8724e8bed998c48bea2623b0062d85, type: 3}
+--- !u!114 &996294541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8119916578270290253, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+  m_PrefabInstance: {fileID: 470149629}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54daecddca779524abd0804ad668e0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1145196214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17749,6 +17767,5 @@ SceneRoots:
   - {fileID: 217410690}
   - {fileID: 2065411797}
   - {fileID: 253291766}
-  - {fileID: 268485473}
   - {fileID: 1842534833}
   - {fileID: 1394710233}
