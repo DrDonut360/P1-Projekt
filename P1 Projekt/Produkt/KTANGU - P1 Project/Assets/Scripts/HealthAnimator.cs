@@ -9,6 +9,12 @@ public class HealthAnimator : MonoBehaviour
     [SerializeField] Health health;
     void Start()
     {
+
+        if (animator == null)
+        {
+            animator = gameObject.GetComponent<Animator>();
+        }
+
         if (health == null)
         {
             foreach (GameObject obj in FindObjectsOfType<GameObject>())
