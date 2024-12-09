@@ -42,7 +42,7 @@ public class Inventory : MonoBehaviour
 
         //repositions panel based to adjust for size (genuine monkey code)
         Vector2 oldPos = uiPanel.GetComponent<RectTransform>().anchoredPosition;
-        Vector2 newPos = new Vector2 (oldPos.x + ((newLenght / 2 - lenghtPerStar / 2) * 0.1f), oldPos.y); 
+        Vector2 newPos = new Vector2 (oldPos.x + ((newLenght / 2) * 0.2f), oldPos.y); 
         uiPanel.GetComponent<RectTransform>().anchoredPosition = newPos;
 
         // draws stars
