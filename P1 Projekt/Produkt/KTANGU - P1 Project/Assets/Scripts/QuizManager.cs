@@ -34,7 +34,7 @@ public class QuizManager : MonoBehaviour
         WriteQuestion();
         popupPanel.SetActive(true);
         showingQuiz = true;
-        timer = 2;
+        timer = 2;  // 2 sec timer before able to hide question. Prevents misclick
     }
 
     // Hide the popup
