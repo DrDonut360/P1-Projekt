@@ -273,6 +273,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1373854783895319491, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190274639738996533, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2591740766665630695, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3000
+      objectReference: {fileID: 0}
     - target: {fileID: 5804072624848797783, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -316,6 +328,10 @@ PrefabInstance:
     - target: {fileID: 6225403341355848528, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
       propertyPath: m_Name
       value: QuizManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270493302724049011, guid: 9c07669e364ffc24fa5f743e7eb1e8bb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
